@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.6.0_20" class="java.beans.XMLDecoder">
+<java version="1.6.0_0" class="java.beans.XMLDecoder">
 
 <!-- This is a neuroConstruct project file. It's best to open this
 file with neuroConstruct, as opposed to editing it directly. 
@@ -591,14 +591,6 @@ These are reconstructed cells as shown in Fig. 6A of Vervaeke et al 2010, which 
 </string>
    </void>
    <void method="put">
-    <float>-1.0</float>
-    <string>objref random_conductance_generator
-
-random_conductance_generator = new Random()
-
-random_conductance_generator.MCellRan4()</string>
-   </void>
-   <void method="put">
     <float>1.0</float>
     <string>
 
@@ -606,6 +598,14 @@ forall if (ismembrane(&quot;VariableLeak&quot;)) {
 	gmax_VariableLeak = random_conductance_generator.uniform(0,26E-5) //23E-5
 	print &quot;** Mechanism VariableLeak is present on &quot;, secname(), &quot;, setting the max conductance of this to: &quot;,gmax_VariableLeak
 }</string>
+   </void>
+   <void method="put">
+    <float>-1.0</float>
+    <string>objref random_conductance_generator
+
+random_conductance_generator = new Random()
+
+random_conductance_generator.MCellRan4()</string>
    </void>
    <void method="put">
     <float>2.0</float>

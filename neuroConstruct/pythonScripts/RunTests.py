@@ -29,8 +29,6 @@ sys.path.append(os.environ["NC_HOME"]+"/pythonNeuroML/nCUtils")
 import ncutils as nc
 
 projFile = File(os.getcwd(), "../VervaekeEtAl-GolgiCellNetwork.ncx")
-# NEURON              2104606939
-# neuroConstruct      1631914719
 
 
 ##############  Main settings  ##################
