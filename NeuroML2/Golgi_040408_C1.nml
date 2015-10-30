@@ -1,35 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="Golgi_040408_C1">
 
-    <include href="Ca_HVA.nml"/>
-
-    <include href="Ca_LVA.nml"/>
-
-    <include href="CALC.nml"/>
-
-    <include href="CALC_ca2.nml"/>
-
-    <include href="HCN1.nml"/>
-
-    <include href="HCN2.nml"/>
-
-    <include href="KA.nml"/>
-
-    <include href="KBK.nml"/>
-
-    <include href="KM.nml"/>
-
-    <include href="KSK.nml"/>
-
-    <include href="KV.nml"/>
-
-    <include href="LeakConductance.nml"/>
-
-    <include href="NaP.nml"/>
-
-    <include href="NaR.nml"/>
-
-    <include href="NaT.nml"/>
 
     <cell id="Golgi_040408_C1">
 
