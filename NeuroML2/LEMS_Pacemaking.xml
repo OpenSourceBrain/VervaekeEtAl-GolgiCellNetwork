@@ -1,0 +1,64 @@
+<Lems xmlns="http://www.neuroml.org/lems/0.7.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/lems/0.7.2  https://raw.github.com/LEMS/LEMS/development/Schemas/LEMS/LEMS_v0.7.2.xsd">
+
+    <Target component="sim1" reportFile="simulator.props" timesFile="time.dat"/>
+
+        <!--Include standard NeuroML 2 ComponentType definitions-->
+
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+
+
+        <!--   Channel/synapse files-->
+    <Include file="Golgi_NaT.channel.nml"/>
+    <Include file="Golgi_NaR.channel.nml"/>
+    <Include file="Golgi_NaP.channel.nml"/>
+    
+    <Include file="Golgi_KA.channel.nml"/>
+    <Include file="Golgi_Kslow.channel.nml"/>
+    <Include file="Golgi_KV.channel.nml"/>
+    <Include file="Golgi_KC.channel.nml"/>
+    <Include file="Golgi_KAHP.channel.nml"/>
+    
+    <Include file="Golgi_Ca_HVA.channel.nml"/>
+    <Include file="Golgi_Ca_LVA.channel.nml"/>
+    
+    <Include file="Golgi_hcn1f.channel.nml"/>
+    <Include file="Golgi_hcn1s.channel.nml"/>
+    <Include file="Golgi_hcn2f.channel.nml"/>
+    <Include file="Golgi_hcn2s.channel.nml"/>
+
+    <Include file="LeakCond.channel.nml"/>
+    
+    <Include file="Golgi_CALC.nml"/>
+    <Include file="Golgi_CALC_ca2.nml"/>
+
+        <!--   Cell files-->
+    <Include file="Golgi_040408_C1.cell.nml"/>
+        <!--   Network file-->
+    <Include file="Golgi_040408_C1.net.nml"/>
+    
+
+        <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
+        is used to allow validation of this file according to the LEMS schema specified above...-->
+    <Component type="Simulation" id="sim1" length="1500.0ms" step="0.001ms" target="network">
+        
+        <Display id="CG_v" title="Soma VOLTAGE" xmin="-100.0" xmax="1600.0" ymin="-75" ymax="50" timeScale="1ms">
+            <Line id="VOLTAGE" timeScale="1ms" quantity="Golgi/0/Golgi_040408_C1/v" scale="1 mV" color="#000000"/>
+        </Display>
+        
+        
+       <Display id="CG_conc" title="Soma [Ca2+]" xmin="-100.0" xmax="1600.0" ymin="-0.0006" ymax="0.006" timeScale="1ms">
+            <Line id="[Ca2+]ca" timeScale="1ms" quantity="Golgi/0/Golgi_040408_C1/caConc" scale="1 mM" color="#000000"/>
+        </Display>
+
+        
+        <OutputFile id="v" fileName="Soma.v.dat">
+            <OutputColumn id="v" quantity="Golgi/0/Golgi_040408_C1/v"/>
+        </OutputFile>
+        
+        
+    </Component>
+
+
+</Lems>

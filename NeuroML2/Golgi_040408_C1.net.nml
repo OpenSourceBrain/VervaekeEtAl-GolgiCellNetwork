@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.githubusercontent.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="Golgi_040408_C1">
+
+    <include href="Golgi_Ca_HVA.channel.nml"/>
+
+    <include href="Golgi_Ca_LVA.channel.nml"/>
+
+    <include href="Golgi_CALC.nml"/>
+
+    <include href="Golgi_CALC_ca2.nml"/>
+
+    <include href="Golgi_hcn1f.channel.nml"/>
+    <include href="Golgi_hcn1s.channel.nml"/>
+    <include href="Golgi_hcn2f.channel.nml"/>
+    <include href="Golgi_hcn2s.channel.nml"/>
+
+    <include href="Golgi_KA.channel.nml"/>
+
+    <include href="Golgi_KC.channel.nml"/>
+
+    <include href="Golgi_Kslow.channel.nml"/>
+
+    <include href="Golgi_KAHP.channel.nml"/>
+
+    <include href="Golgi_KV.channel.nml"/>
+
+    <include href="LeakCond.channel.nml"/>
+
+    <include href="Golgi_NaP.channel.nml"/>
+
+    <include href="Golgi_NaR.channel.nml"/>
+
+    <include href="Golgi_NaT.channel.nml"/>
+    
+    <include href="Golgi_040408_C1.cell.nml"/>
+
+    <network id="network" type="networkWithTemperature" temperature="23 degC">
+
+        <population id="Golgi" component="Golgi_040408_C1" type="populationList" size="1">
+            <instance id="0">
+                <location x="0" y="0" z="0"/>
+            </instance>
+        </population>
+
+
+    </network>
+</neuroml>
