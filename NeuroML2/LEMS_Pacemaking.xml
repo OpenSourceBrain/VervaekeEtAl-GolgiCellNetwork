@@ -41,7 +41,7 @@
 
         <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
         is used to allow validation of this file according to the LEMS schema specified above...-->
-    <Component type="Simulation" id="sim1" length="1500.0ms" step="0.001ms" target="network">
+    <Component type="Simulation" id="sim1" length="2000.0ms" step="0.0025ms" target="network">
         
         <Display id="CG_v" title="Soma VOLTAGE" xmin="-100.0" xmax="1600.0" ymin="-75" ymax="50" timeScale="1ms">
             <Line id="VOLTAGE" timeScale="1ms" quantity="Golgi/0/Golgi_040408_C1/v" scale="1 mV" color="#000000"/>

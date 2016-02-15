@@ -36117,9 +36117,9 @@ See the main project description for more details on the cells included with thi
 
             <intracellularProperties2CaPools>
 
-                <species id="ca" ion="ca"  concentrationModel="Golgi_CALC" initialConcentration="5e-11mol_per_cm3" initialExtConcentration="2.0E-6 mol_per_cm3"/>
+                <species id="ca" ion="ca"  segmentGroup="soma_group" concentrationModel="Golgi_CALC" initialConcentration="5e-11mol_per_cm3" initialExtConcentration="2.0E-6 mol_per_cm3"/>
 
-                <species id="ca2"  ion="ca2" concentrationModel="Golgi_CALC_ca2" initialConcentration="5e-11mol_per_cm3" initialExtConcentration="2.0E-6 mol_per_cm3"/>
+                <species id="ca2"  ion="ca2"  segmentGroup="soma_group" concentrationModel="Golgi_CALC_ca2" initialConcentration="5e-11mol_per_cm3" initialExtConcentration="2.0E-6 mol_per_cm3"/>
 
                 <resistivity value="0.1 kohm_cm"/>
 
