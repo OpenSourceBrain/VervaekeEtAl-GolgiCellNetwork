@@ -21,4 +21,4 @@ simulations
 /NeuroML2/*.svg
 /NeuroML2/*nrn.py
 *~
-
+/NeuroML2/LEMS_Test_*.xml
