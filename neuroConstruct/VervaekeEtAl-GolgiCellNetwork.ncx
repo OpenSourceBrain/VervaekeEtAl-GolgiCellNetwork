@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.8.0_72" class="java.beans.XMLDecoder">
+<java version="1.8.0_112" class="java.beans.XMLDecoder">
 
 <!-- This is a neuroConstruct project file. It's best to open this
 file with neuroConstruct, as opposed to editing it directly. 
@@ -655,14 +655,6 @@ These are reconstructed cells as shown in Fig. 6A of Vervaeke et al 2010, which 
 </string>
    </void>
    <void method="put">
-    <float>-1.0</float>
-    <string>objref random_conductance_generator
-
-random_conductance_generator = new Random()
-
-random_conductance_generator.MCellRan4()</string>
-   </void>
-   <void method="put">
     <float>1.0</float>
     <string>
 
@@ -670,6 +662,14 @@ forall if (ismembrane(&quot;VariableLeak&quot;)) {
 	gmax_VariableLeak = random_conductance_generator.uniform(0,26E-5) //23E-5
 	print &quot;** Mechanism VariableLeak is present on &quot;, secname(), &quot;, setting the max conductance of this to: &quot;,gmax_VariableLeak
 }</string>
+   </void>
+   <void method="put">
+    <float>-1.0</float>
+    <string>objref random_conductance_generator
+
+random_conductance_generator = new Random()
+
+random_conductance_generator.MCellRan4()</string>
    </void>
    <void method="put">
     <float>2.0</float>
@@ -702,7 +702,7 @@ forall if (ismembrane(&quot;VariableLeak&quot;)) {
    <float>3500.0</float>
   </void>
   <void property="reference">
-   <string>Sim_3111</string>
+   <string>Sim_3121</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -4243,6 +4243,29 @@ forall if (ismembrane(&quot;VariableLeak&quot;)) {
      <void property="plots">
       <void method="add">
        <string>CellGroup_2_v</string>
+      </void>
+     </void>
+     <void property="simDuration">
+      <float>2000.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig5">
+     <void property="cellGroups">
+      <void method="add">
+       <string>CellGroup_3</string>
+      </void>
+     </void>
+     <void property="description">
+      <string>Pacemaking NML example</string>
+     </void>
+     <void property="name">
+      <string>PacemakingNML</string>
+     </void>
+     <void property="plots">
+      <void method="add">
+       <string>CellGroup_3_v</string>
       </void>
      </void>
      <void property="simDuration">

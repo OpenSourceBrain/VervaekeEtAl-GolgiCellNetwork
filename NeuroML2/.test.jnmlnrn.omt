@@ -2,3 +2,17 @@
 
 target: LEMS_Pacemaking.xml 
 engine: jNeuroML_NEURON
+
+mep: .test.mep
+experiments:
+  pacemaking:
+    observables:
+      spike times:
+        file: 
+          path: Soma.v.dat
+          columns: [0,1]
+          scaling: [1000, 1000]
+        spike detection: 
+          method: threshold
+          threshold: 0
+        tolerance: 0

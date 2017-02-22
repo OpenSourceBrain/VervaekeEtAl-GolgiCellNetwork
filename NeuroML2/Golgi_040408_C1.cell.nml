@@ -36085,7 +36085,7 @@ See the main project description for more details on the cells included with thi
                 
                 <channelDensity condDensity="8.0 mS_per_cm2" id="KA_soma_group" ionChannel="Golgi_KA" segmentGroup="soma_group" ion="k" erev="-84.69 mV"/>
                 
-                <channelDensity condDensity="9.0 mS_per_cm2" id="KC_soma_group" ionChannel="Golgi_KC" segmentGroup="soma_group" ion="k" erev="-84.69 mV"/>
+                <channelDensity condDensity="3.0 mS_per_cm2" id="KC_soma_group" ionChannel="Golgi_KC" segmentGroup="soma_group" ion="k" erev="-84.69 mV"/>
                 
                 <channelDensity condDensity="1.0 mS_per_cm2" id="Kslow_soma_group" ionChannel="Golgi_Kslow" segmentGroup="soma_group" ion="k" erev="-84.69 mV"/>
                 
