@@ -17,9 +17,7 @@ Network connection: NetConn_CellGroup_1_CellGroup_1 contains 352 individual syna
 
     <include href="GapJuncCML.nml"/>
     <include href="Golgi_040408_C1.cell.nml"/>
-    <include href="MultiDecaySyn.synapse.nml"/>
     
-    <poissonFiringSynapse id="Input_21" averageRate="2.0 per_s" synapse="MultiDecaySyn" spikeTarget="./MultiDecaySyn"/>
     
     <poissonFiringSynapse id="Input_20" averageRate="0.5 per_s" synapse="ApicalSyn" spikeTarget="./ApicalSyn"/>
     
@@ -524,7 +522,7 @@ Network connection: NetConn_CellGroup_1_CellGroup_1 contains 352 individual syna
             <electricalConnectionInstance id="350" preCell="../CellGroup_1/40/Golgi_040408_C1" postCell="../CellGroup_1/42/Golgi_040408_C1" preSegment="4611" preFractionAlong="0.6930265" postSegment="3909" postFractionAlong="0.5937395" synapse="GapJuncCML" />
             <electricalConnectionInstance id="351" preCell="../CellGroup_1/42/Golgi_040408_C1" postCell="../CellGroup_1/44/Golgi_040408_C1" preSegment="3551" preFractionAlong="0.72671247" postSegment="4507" postFractionAlong="0.52855957" synapse="GapJuncCML" />
         </electricalProjection>
-
+<!--
         <inputList id="Input_21" component="Input_21" population="CellGroup_1">
             <input id="0" target="../CellGroup_1/0/Golgi_040408_C1_varLeakInitPot" destination="synapses" segmentId="4244" fractionAlong="0.06991738"/>
             <input id="1" target="../CellGroup_1/0/Golgi_040408_C1_varLeakInitPot" destination="synapses" segmentId="4416" fractionAlong="0.34693953"/>
@@ -1426,7 +1424,7 @@ Network connection: NetConn_CellGroup_1_CellGroup_1 contains 352 individual syna
             <input id="897" target="../CellGroup_1/44/Golgi_040408_C1_varLeakInitPot" destination="synapses" segmentId="4442" fractionAlong="0.7064464"/>
             <input id="898" target="../CellGroup_1/44/Golgi_040408_C1_varLeakInitPot" destination="synapses" segmentId="4387" fractionAlong="0.6425562"/>
             <input id="899" target="../CellGroup_1/44/Golgi_040408_C1_varLeakInitPot" destination="synapses" segmentId="4301" fractionAlong="0.7152013"/>
-        </inputList>
+        </inputList>-->
 
 
 
