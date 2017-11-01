@@ -1,0 +1,303 @@
+<Lems xmlns="http://www.neuroml.org/lems/0.7.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/lems/0.7.2  https://raw.githubusercontent.com/LEMS/LEMS/development/Schemas/LEMS/LEMS_v0.7.2.xsd">
+
+    <Target component="sim1" reportFile="simulator.props" timesFile="time.dat"/>
+
+        <!--Include standard NeuroML 2 ComponentType definitions-->
+
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+
+    
+
+        <!--Include the generated NeuroML 2 files-->
+
+
+        <!--   Channel/synapse files-->
+    <Include file="ApicalSyn.synapse.nml"/>
+    
+        <!--   Cell files-->
+    <Include file="Golgi_040408_C1.cell.nml"/>
+        <!--   Network file-->
+    <Include file="VervaekeEtAl-GolgiCellNetwork.net.nml"/>
+    
+
+        <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
+        is used to allow validation of this file according to the LEMS schema specified above...-->
+    <Component type="Simulation" id="sim1" length="500.0ms" step="0.0025ms" target="network_VervaekeEtAl_GolgiCellNetwork">
+        
+        <Display id="GraphWin_0" title="VervaekeEtAl-GolgiCellNetwork: Default Simulation Configuration, CellGroup_1, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE" xmin="-0.5" xmax="5.5000005" ymin="-0.104" ymax="0.064" timeScale="1s">
+            <Line id="CellGroup_1_0 v" timeScale="1s" quantity="CellGroup_1/0/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#000000"/>
+        
+            <Line id="CellGroup_1_1 v" timeScale="1s" quantity="CellGroup_1/1/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ff0000"/>
+        
+            <Line id="CellGroup_1_2 v" timeScale="1s" quantity="CellGroup_1/2/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#0000ff"/>
+        
+            <Line id="CellGroup_1_3 v" timeScale="1s" quantity="CellGroup_1/3/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#009b00"/>
+        
+            <Line id="CellGroup_1_4 v" timeScale="1s" quantity="CellGroup_1/4/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ffc800"/>
+        
+            <Line id="CellGroup_1_5 v" timeScale="1s" quantity="CellGroup_1/5/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#8c6400"/>
+        
+            <Line id="CellGroup_1_6 v" timeScale="1s" quantity="CellGroup_1/6/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ff00ff"/>
+        
+            <Line id="CellGroup_1_7 v" timeScale="1s" quantity="CellGroup_1/7/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ffff00"/>
+        
+            <Line id="CellGroup_1_8 v" timeScale="1s" quantity="CellGroup_1/8/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#808080"/>
+        
+            <Line id="CellGroup_1_9 v" timeScale="1s" quantity="CellGroup_1/9/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#000000"/>
+        
+            <Line id="CellGroup_1_10 v" timeScale="1s" quantity="CellGroup_1/10/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ff0000"/>
+        
+            <Line id="CellGroup_1_11 v" timeScale="1s" quantity="CellGroup_1/11/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#0000ff"/>
+        
+            <Line id="CellGroup_1_12 v" timeScale="1s" quantity="CellGroup_1/12/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#009b00"/>
+        
+            <Line id="CellGroup_1_13 v" timeScale="1s" quantity="CellGroup_1/13/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ffc800"/>
+        
+            <Line id="CellGroup_1_14 v" timeScale="1s" quantity="CellGroup_1/14/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#8c6400"/>
+        
+            <Line id="CellGroup_1_15 v" timeScale="1s" quantity="CellGroup_1/15/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ff00ff"/>
+        
+            <Line id="CellGroup_1_16 v" timeScale="1s" quantity="CellGroup_1/16/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ffff00"/>
+        
+            <Line id="CellGroup_1_17 v" timeScale="1s" quantity="CellGroup_1/17/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#808080"/>
+        
+            <Line id="CellGroup_1_18 v" timeScale="1s" quantity="CellGroup_1/18/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#000000"/>
+        
+            <Line id="CellGroup_1_19 v" timeScale="1s" quantity="CellGroup_1/19/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ff0000"/>
+        
+            <Line id="CellGroup_1_20 v" timeScale="1s" quantity="CellGroup_1/20/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#0000ff"/>
+        
+            <Line id="CellGroup_1_21 v" timeScale="1s" quantity="CellGroup_1/21/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#009b00"/>
+        
+            <Line id="CellGroup_1_22 v" timeScale="1s" quantity="CellGroup_1/22/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ffc800"/>
+        
+            <Line id="CellGroup_1_23 v" timeScale="1s" quantity="CellGroup_1/23/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#8c6400"/>
+        
+            <Line id="CellGroup_1_24 v" timeScale="1s" quantity="CellGroup_1/24/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ff00ff"/>
+        
+            <Line id="CellGroup_1_25 v" timeScale="1s" quantity="CellGroup_1/25/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ffff00"/>
+        
+            <Line id="CellGroup_1_26 v" timeScale="1s" quantity="CellGroup_1/26/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#808080"/>
+        
+            <Line id="CellGroup_1_27 v" timeScale="1s" quantity="CellGroup_1/27/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#000000"/>
+        
+            <Line id="CellGroup_1_28 v" timeScale="1s" quantity="CellGroup_1/28/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ff0000"/>
+        
+            <Line id="CellGroup_1_29 v" timeScale="1s" quantity="CellGroup_1/29/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#0000ff"/>
+        
+            <Line id="CellGroup_1_30 v" timeScale="1s" quantity="CellGroup_1/30/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#009b00"/>
+        
+            <Line id="CellGroup_1_31 v" timeScale="1s" quantity="CellGroup_1/31/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ffc800"/>
+        
+            <Line id="CellGroup_1_32 v" timeScale="1s" quantity="CellGroup_1/32/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#8c6400"/>
+        
+            <Line id="CellGroup_1_33 v" timeScale="1s" quantity="CellGroup_1/33/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ff00ff"/>
+        
+            <Line id="CellGroup_1_34 v" timeScale="1s" quantity="CellGroup_1/34/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ffff00"/>
+        
+            <Line id="CellGroup_1_35 v" timeScale="1s" quantity="CellGroup_1/35/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#808080"/>
+        
+            <Line id="CellGroup_1_36 v" timeScale="1s" quantity="CellGroup_1/36/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#000000"/>
+        
+            <Line id="CellGroup_1_37 v" timeScale="1s" quantity="CellGroup_1/37/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ff0000"/>
+        
+            <Line id="CellGroup_1_38 v" timeScale="1s" quantity="CellGroup_1/38/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#0000ff"/>
+        
+            <Line id="CellGroup_1_39 v" timeScale="1s" quantity="CellGroup_1/39/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#009b00"/>
+        
+            <Line id="CellGroup_1_40 v" timeScale="1s" quantity="CellGroup_1/40/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ffc800"/>
+        
+            <Line id="CellGroup_1_41 v" timeScale="1s" quantity="CellGroup_1/41/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#8c6400"/>
+        
+            <Line id="CellGroup_1_42 v" timeScale="1s" quantity="CellGroup_1/42/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ff00ff"/>
+        
+            <Line id="CellGroup_1_43 v" timeScale="1s" quantity="CellGroup_1/43/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#ffff00"/>
+        
+            <Line id="CellGroup_1_44 v" timeScale="1s" quantity="CellGroup_1/44/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#808080"/>
+        </Display>
+    
+        <OutputFile id="Var_0_0_0_OF" fileName="CellGroup_1_0.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/0/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_1_0_OF" fileName="CellGroup_1_1.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/1/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_2_0_OF" fileName="CellGroup_1_2.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/2/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_3_0_OF" fileName="CellGroup_1_3.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/3/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_4_0_OF" fileName="CellGroup_1_4.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/4/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_5_0_OF" fileName="CellGroup_1_5.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/5/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_6_0_OF" fileName="CellGroup_1_6.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/6/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_7_0_OF" fileName="CellGroup_1_7.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/7/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_8_0_OF" fileName="CellGroup_1_8.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/8/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_9_0_OF" fileName="CellGroup_1_9.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/9/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_10_0_OF" fileName="CellGroup_1_10.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/10/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_11_0_OF" fileName="CellGroup_1_11.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/11/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_12_0_OF" fileName="CellGroup_1_12.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/12/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_13_0_OF" fileName="CellGroup_1_13.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/13/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_14_0_OF" fileName="CellGroup_1_14.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/14/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_15_0_OF" fileName="CellGroup_1_15.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/15/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_16_0_OF" fileName="CellGroup_1_16.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/16/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_17_0_OF" fileName="CellGroup_1_17.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/17/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_18_0_OF" fileName="CellGroup_1_18.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/18/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_19_0_OF" fileName="CellGroup_1_19.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/19/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_20_0_OF" fileName="CellGroup_1_20.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/20/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_21_0_OF" fileName="CellGroup_1_21.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/21/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_22_0_OF" fileName="CellGroup_1_22.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/22/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_23_0_OF" fileName="CellGroup_1_23.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/23/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_24_0_OF" fileName="CellGroup_1_24.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/24/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_25_0_OF" fileName="CellGroup_1_25.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/25/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_26_0_OF" fileName="CellGroup_1_26.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/26/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_27_0_OF" fileName="CellGroup_1_27.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/27/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_28_0_OF" fileName="CellGroup_1_28.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/28/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_29_0_OF" fileName="CellGroup_1_29.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/29/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_30_0_OF" fileName="CellGroup_1_30.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/30/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_31_0_OF" fileName="CellGroup_1_31.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/31/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_32_0_OF" fileName="CellGroup_1_32.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/32/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_33_0_OF" fileName="CellGroup_1_33.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/33/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_34_0_OF" fileName="CellGroup_1_34.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/34/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_35_0_OF" fileName="CellGroup_1_35.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/35/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_36_0_OF" fileName="CellGroup_1_36.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/36/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_37_0_OF" fileName="CellGroup_1_37.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/37/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_38_0_OF" fileName="CellGroup_1_38.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/38/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_39_0_OF" fileName="CellGroup_1_39.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/39/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_40_0_OF" fileName="CellGroup_1_40.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/40/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_41_0_OF" fileName="CellGroup_1_41.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/41/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_42_0_OF" fileName="CellGroup_1_42.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/42/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_43_0_OF" fileName="CellGroup_1_43.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/43/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    
+        <OutputFile id="Var_0_44_0_OF" fileName="CellGroup_1_44.0.dat">
+            <OutputColumn id="v" quantity="CellGroup_1/44/Golgi_040408_C1_varLeakInitPot/0/v"/>
+        </OutputFile>
+    </Component>
+
+
+</Lems>
