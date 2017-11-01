@@ -24,7 +24,7 @@
 
         <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
         is used to allow validation of this file according to the LEMS schema specified above...-->
-    <Component type="Simulation" id="sim1" length="500.0ms" step="0.0025ms" target="network_VervaekeEtAl_GolgiCellNetwork">
+    <Component type="Simulation" id="sim1" length="100.0ms" step="0.0025ms" target="network_VervaekeEtAl_GolgiCellNetwork">
         
         <Display id="GraphWin_0" title="VervaekeEtAl-GolgiCellNetwork: Default Simulation Configuration, CellGroup_1, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE, VOLTAGE" xmin="-0.5" xmax="5.5000005" ymin="-0.104" ymax="0.064" timeScale="1s">
             <Line id="CellGroup_1_0 v" timeScale="1s" quantity="CellGroup_1/0/Golgi_040408_C1_varLeakInitPot/0/v" scale="1 V" color="#000000"/>
