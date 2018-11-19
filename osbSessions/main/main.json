@@ -1,221 +1,164 @@
 {
-  "id": 434,
-  "name": "vervaekeetalgolgicellnetwork",
-  "experiments": [
-    {
-      "id": 758,
-      "aspectConfigurations": [
+    "id": 434,
+    "name": "vervaekeetalgolgicellnetwork",
+    "experiments": [
         {
-          "id": 750,
-          "instance": "network",
-          "watchedVariables": [
-            
-          ],
-          "modelParameters": [
-            
-          ],
-          "simulatorConfiguration": {
-            "id": 739,
-            "simulatorId": "neuronSimulator",
-            "timestep": 2.5e-5,
-            "length": 0.3,
-            "parameters": {
-              "target": "network"
+            "id": 758,
+            "aspectConfigurations": [
+                {
+                    "id": 750,
+                    "instance": "network",
+                    "watchedVariables": [
+                    ],
+                    "modelParameters": [
+                    ],
+                    "simulatorConfiguration": {
+                        "id": 739,
+                        "simulatorId": "neuronSimulator",
+                        "timestep": 2.5e-5,
+                        "length": 0.3,
+                        "parameters": {
+                            "target": "network"
+                        }
+                    }
+                }
+            ],
+            "name": "Golgi_040408_C1 - net",
+            "creationDate": 1517226955000,
+            "lastModified": 1517226955000,
+            "status": "DESIGN",
+            "simulationResults": [
+            ],
+            "script": "\/script.js",
+            "isPublic": false,
+            "view": {
+                "id": 795,
+                "viewStates": {
+                    "views": {
+                        "Plot1": {
+                            "widgetType": 0,
+                            "isWidget": true,
+                            "transparentBackground": false,
+                            "name": "Golgi_Ca_LVA - gate h - time course",
+                            "size": {
+                                "height": 300,
+                                "width": 350
+                            },
+                            "position": {
+                                "left": "50%",
+                                "top": "50%"
+                            },
+                            "dataType": "function",
+                            "data": "Model.neuroml.Golgi_Ca_LVA.h.timeCourse.time_course"
+                        },
+                        "Plot2": {
+                            "widgetType": 0,
+                            "isWidget": true,
+                            "transparentBackground": false,
+                            "name": "Golgi_Ca_LVA - gate m - time course",
+                            "size": {
+                                "height": 300,
+                                "width": 350
+                            },
+                            "position": {
+                                "left": 1246.5,
+                                "top": 239
+                            },
+                            "dataType": "function",
+                            "data": "Model.neuroml.Golgi_Ca_LVA.m.timeCourse.time_course"
+                        },
+                        "Popup1": {
+                            "widgetType": 1,
+                            "isWidget": true,
+                            "showHistoryNavigationBar": true,
+                            "transparentBackground": false,
+                            "name": "Information for Golgi_Ca_LVA",
+                            "size": {
+                                "height": 394,
+                                "width": 490
+                            },
+                            "position": {
+                                "left": 95,
+                                "top": 140
+                            },
+                            "dataType": "object",
+                            "data": ["Model.neuroml.Golgi_Ca_LVA", ["HTMLType"]],
+                            "componentSpecific": {
+                                "customHandlers": [{
+                                        "funct": "function customHandler(node, path, widget) {\n            var n;\n            try {\n                n = eval(path);\n                var metaType = n.getMetaType();\n                if (metaType == GEPPETTO.Resources.VARIABLE_NODE) {\n                    //A plot function inside a channel\n                    G.addWidget(Widgets.PLOT).then(function (w) {\n                        return w.plotFunctionNode(n);\n                    });\n                } else if (metaType == GEPPETTO.Resources.VISUAL_GROUP_NODE) {\n                    //A visual group\n                    n.show(true);\n                } else if (metaType == GEPPETTO.Resources.COMPOSITE_TYPE_NODE) {\n                    //Another composite\n                    widget.setName('Information for ' + n.getId()).setData(n, [GEPPETTO.Resources.HTML_TYPE]);\n                }\n            } catch (ex) {\n                node = undefined;\n            }\n        }",
+                                        "event": "click"
+                                    }]
+                            }
+                        },
+                        "Tutorial1": {
+                            "widgetType": "TUTORIAL",
+                            "isWidget": true,
+                            "dataType": "array",
+                            "data": [],
+                            "componentSpecific": {
+                                "activeTutorial": "Open Source Brain Tutorial",
+                                "currentStep": 0
+                            },
+                            "size": {
+                                "height": 300,
+                                "width": 350
+                            },
+                            "position": {
+                                "left": "50%",
+                                "top": "50%"
+                            }
+                        },
+                        "Canvas1": {
+                            "widgetType": "CANVAS",
+                            "isWidget": false,
+                            "dataType": "instances",
+                            "data": ["network"],
+                            "componentSpecific": {
+                                "cameraPosition": {
+                                    "x": -46.534,
+                                    "y": 55.103,
+                                    "z": 537.727
+                                },
+                                "cameraRotation": {
+                                    "rx": 0,
+                                    "ry": 0,
+                                    "rz": 0,
+                                    "radius": 547.43
+                                },
+                                "colorMap": {},
+                                "opacityMap": {},
+                                "geometryTypeMap": {},
+                                "hoverListeners": [],
+                                "backgroundColor": "0x101010"
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      ],
-      "name": "Golgi_040408_C1 - net",
-      "creationDate": 1517226955000,
-      "lastModified": 1517226955000,
-      "status": "DESIGN",
-      "simulationResults": [
-        
-      ],
-      "script": "\/script.js",
-      "isPublic": false,
-      "view": {
-        "id": 577,
+    ],
+    "activeExperimentId": 758,
+    "geppettoModel": {
+        "id": 1316,
+        "url": "\/GeppettoModel.xmi",
+        "type": "GEPPETTO_PROJECT"
+    },
+    "isPublic": false,
+    "isReadOnly": false,
+    "view": {
+        "id": 576,
         "viewStates": {
-          "views": {
-            "Plot1": {
-              "widgetType": 0,
-              "isWidget": true,
-              "transparentBackground": false,
-              "name": "Golgi_Ca_HVA - gate s - forward rate",
-              "size": {
-                "height": 300,
-                "width": 350
-              },
-              "position": {
-                "left": 1567,
-                "top": 412.5
-              },
-              "dataType": "function",
-              "data": "Model.neuroml.Golgi_Ca_HVA.s.forwardRate.forward_rate"
-            },
-            "Plot2": {
-              "widgetType": 0,
-              "isWidget": true,
-              "transparentBackground": false,
-              "name": "Golgi_Ca_HVA - gate s - reverse rate",
-              "size": {
-                "height": 315.8,
-                "width": 346.8
-              },
-              "position": {
-                "left": 1217,
-                "top": 412.5
-              },
-              "dataType": "function",
-              "data": "Model.neuroml.Golgi_Ca_HVA.s.reverseRate.reverse_rate"
-            },
-            "Plot3": {
-              "widgetType": 0,
-              "isWidget": true,
-              "transparentBackground": false,
-              "name": "Golgi_Ca_HVA - gate u - forward rate",
-              "size": {
-                "height": 300,
-                "width": 350
-              },
-              "position": {
-                "left": 1568,
-                "top": 94.5
-              },
-              "dataType": "function",
-              "data": "Model.neuroml.Golgi_Ca_HVA.u.forwardRate.forward_rate"
-            },
-            "Plot4": {
-              "widgetType": 0,
-              "isWidget": true,
-              "transparentBackground": false,
-              "name": "Golgi_Ca_HVA - gate u - reverse rate",
-              "size": {
-                "height": 300,
-                "width": 350
-              },
-              "position": {
-                "left": 1215,
-                "top": 94.5
-              },
-              "dataType": "function",
-              "data": "Model.neuroml.Golgi_Ca_HVA.u.reverseRate.reverse_rate"
-            },
-            "Popup1": {
-              "widgetType": 1,
-              "isWidget": true,
-              "showHistoryNavigationBar": true,
-              "transparentBackground": false,
-              "name": "Information for Golgi_Ca_HVA",
-              "size": {
-                "height": 394,
-                "width": 490
-              },
-              "position": {
-                "left": 106,
-                "top": 76
-              },
-              "dataType": "object",
-              "data": [
-                "Model.neuroml.Golgi_Ca_HVA",
-                [
-                  "HTMLType"
-                ]
-              ],
-              "componentSpecific": {
-                "customHandlers": [
-                  {
-                    "funct": "function customHandler(node, path, widget) {\n            var n;\n            try {\n                n = eval(path);\n                var metaType = n.getMetaType();\n                if (metaType == GEPPETTO.Resources.VARIABLE_NODE) {\n                    \/\/A plot function inside a channel\n                    G.addWidget(Widgets.PLOT).then(function (w) {\n                        return w.plotFunctionNode(n);\n                    });\n                } else if (metaType == GEPPETTO.Resources.VISUAL_GROUP_NODE) {\n                    \/\/A visual group\n                    n.show(true);\n                } else if (metaType == GEPPETTO.Resources.COMPOSITE_TYPE_NODE) {\n                    \/\/Another composite\n                    widget.setName('Information for ' + n.getId()).setData(n, [GEPPETTO.Resources.HTML_TYPE]);\n                }\n            } catch (ex) {\n                node = undefined;\n            }\n        }",
-                    "event": "click"
-                  }
-                ]
-              }
-            },
-            "Tutorial1": {
-              "widgetType": "TUTORIAL",
-              "isWidget": true,
-              "dataType": "array",
-              "data": [
-                
-              ],
-              "componentSpecific": {
-                "activeTutorial": "Open Source Brain Tutorial",
-                "currentStep": 0
-              },
-              "size": {
-                "height": 300,
-                "width": 350
-              },
-              "position": {
-                "left": 115,
-                "top": 491
-              }
-            },
-            "Console1": {
-              "widgetType": "CONSOLE",
-              "isWidget": false
-            },
-            "Canvas1": {
-              "widgetType": "CANVAS",
-              "isWidget": false,
-              "dataType": "instances",
-              "data": [
-                "network"
-              ],
-              "componentSpecific": {
-                "cameraPosition": {
-                  "x": 6.632,
-                  "y": 53.767,
-                  "z": 408.609
-                },
-                "cameraRotation": {
-                  "rx": 0,
-                  "ry": 0,
-                  "rz": 0,
-                  "radius": 418.312
-                },
-                "colorMap": {
-                  
-                },
-                "opacityMap": {
-                  
-                },
-                "geometryTypeMap": {
-                  
-                },
-                "backgroundColor": "0x101010"
-              }
+            "views": {
+                "Canvas1": {
+                    "widgetType": "CANVAS",
+                    "componentSpecific": {
+                        "radiusMap": {
+                        },
+                        "colorMap": {
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  ],
-  "activeExperimentId": 758,
-  "geppettoModel": {
-    "id": 1316,
-    "url": "\/GeppettoModel.xmi",
-    "type": "GEPPETTO_PROJECT"
-  },
-  "isPublic": false,
-  "isReadOnly": false,
-  "view": {
-    "id": 576,
-    "viewStates": {
-      "views": {
-        "Canvas1": {
-          "widgetType": "CANVAS",
-          "componentSpecific": {
-            "radiusMap": {
-              
-            },
-            "colorMap": {
-              
-            }
-          }
-        }
-      }
-    }
-  }
 }
