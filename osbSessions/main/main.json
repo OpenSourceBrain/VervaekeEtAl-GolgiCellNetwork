@@ -32,109 +32,141 @@
             "script": "\/script.js",
             "isPublic": false,
             "view": {
-                "id": 795,
-                "viewStates": {
-                    "views": {
-                        "Plot1": {
-                            "widgetType": 0,
-                            "isWidget": true,
-                            "transparentBackground": false,
-                            "name": "Golgi_Ca_LVA - gate h - time course",
-                            "size": {
-                                "height": 300,
-                                "width": 350
-                            },
-                            "position": {
-                                "left": "50%",
-                                "top": "50%"
-                            },
-                            "dataType": "function",
-                            "data": "Model.neuroml.Golgi_Ca_LVA.h.timeCourse.time_course"
-                        },
-                        "Plot2": {
-                            "widgetType": 0,
-                            "isWidget": true,
-                            "transparentBackground": false,
-                            "name": "Golgi_Ca_LVA - gate m - time course",
-                            "size": {
-                                "height": 300,
-                                "width": 350
-                            },
-                            "position": {
-                                "left": 1246.5,
-                                "top": 239
-                            },
-                            "dataType": "function",
-                            "data": "Model.neuroml.Golgi_Ca_LVA.m.timeCourse.time_course"
-                        },
-                        "Popup1": {
-                            "widgetType": 1,
-                            "isWidget": true,
-                            "showHistoryNavigationBar": true,
-                            "transparentBackground": false,
-                            "name": "Information for Golgi_Ca_LVA",
-                            "size": {
-                                "height": 394,
-                                "width": 490
-                            },
-                            "position": {
-                                "left": 95,
-                                "top": 140
-                            },
-                            "dataType": "object",
-                            "data": ["Model.neuroml.Golgi_Ca_LVA", ["HTMLType"]],
-                            "componentSpecific": {
-                                "customHandlers": [{
-                                        "funct": "function customHandler(node, path, widget) {\n            var n;\n            try {\n                n = eval(path);\n                var metaType = n.getMetaType();\n                if (metaType == GEPPETTO.Resources.VARIABLE_NODE) {\n                    //A plot function inside a channel\n                    G.addWidget(Widgets.PLOT).then(function (w) {\n                        return w.plotFunctionNode(n);\n                    });\n                } else if (metaType == GEPPETTO.Resources.VISUAL_GROUP_NODE) {\n                    //A visual group\n                    n.show(true);\n                } else if (metaType == GEPPETTO.Resources.COMPOSITE_TYPE_NODE) {\n                    //Another composite\n                    widget.setName('Information for ' + n.getId()).setData(n, [GEPPETTO.Resources.HTML_TYPE]);\n                }\n            } catch (ex) {\n                node = undefined;\n            }\n        }",
-                                        "event": "click"
-                                    }]
-                            }
-                        },
-                        "Tutorial1": {
-                            "widgetType": "TUTORIAL",
-                            "isWidget": true,
-                            "dataType": "array",
-                            "data": [],
-                            "componentSpecific": {
-                                "activeTutorial": "Open Source Brain Tutorial",
-                                "currentStep": 0
-                            },
-                            "size": {
-                                "height": 300,
-                                "width": 350
-                            },
-                            "position": {
-                                "left": "50%",
-                                "top": "50%"
-                            }
-                        },
-                        "Canvas1": {
-                            "widgetType": "CANVAS",
-                            "isWidget": false,
-                            "dataType": "instances",
-                            "data": ["network"],
-                            "componentSpecific": {
-                                "cameraPosition": {
-                                    "x": -46.534,
-                                    "y": 55.103,
-                                    "z": 537.727
-                                },
-                                "cameraRotation": {
-                                    "rx": 0,
-                                    "ry": 0,
-                                    "rz": 0,
-                                    "radius": 547.43
-                                },
-                                "colorMap": {},
-                                "opacityMap": {},
-                                "geometryTypeMap": {},
-                                "hoverListeners": [],
-                                "backgroundColor": "0x101010"
-                            }
-                        }
-                    }
-                }
-            }
+			"id": 795,
+			"viewStates": {
+				"views": {
+					"Plot3": {
+						"widgetType": 0,
+						"isWidget": true,
+						"transparentBackground": false,
+						"name": "Golgi_Ca_LVA - gate h - steady state",
+						"size": {
+							"height": 300,
+							"width": 350
+						},
+						"position": {
+							"left": 1309.5,
+							"top": 474
+						},
+						"dataType": "function",
+						"data": "Model.neuroml.Golgi_Ca_LVA.h.steadyState.steady_state"
+					},
+					"Plot4": {
+						"widgetType": 0,
+						"isWidget": true,
+						"transparentBackground": false,
+						"name": "Golgi_Ca_LVA - gate m - time course",
+						"size": {
+							"height": 300,
+							"width": 350
+						},
+						"position": {
+							"left": 936.5,
+							"top": 156
+						},
+						"dataType": "function",
+						"data": "Model.neuroml.Golgi_Ca_LVA.m.timeCourse.time_course"
+					},
+					"Plot5": {
+						"widgetType": 0,
+						"isWidget": true,
+						"transparentBackground": false,
+						"name": "Golgi_Ca_LVA - gate m - steady state",
+						"size": {
+							"height": 300,
+							"width": 350
+						},
+						"position": {
+							"left": 921.5,
+							"top": 481
+						},
+						"dataType": "function",
+						"data": "Model.neuroml.Golgi_Ca_LVA.m.steadyState.steady_state"
+					},
+					"Plot1": {
+						"widgetType": 0,
+						"isWidget": true,
+						"transparentBackground": false,
+						"name": "Golgi_Ca_LVA - gate h - time course",
+						"size": {
+							"height": 300,
+							"width": 350
+						},
+						"position": {
+							"left": 1308.5,
+							"top": 149
+						},
+						"dataType": "function",
+						"data": "Model.neuroml.Golgi_Ca_LVA.h.timeCourse.time_course"
+					},
+					"Popup1": {
+						"widgetType": 1,
+						"isWidget": true,
+						"showHistoryNavigationBar": true,
+						"transparentBackground": false,
+						"name": "Information for Golgi_Ca_LVA",
+						"size": {
+							"height": 378.8,
+							"width": 416.8
+						},
+						"position": {
+							"left": 126,
+							"top": 184
+						},
+						"dataType": "object",
+						"data": ["Model.neuroml.Golgi_Ca_LVA", ["HTMLType"]],
+						"componentSpecific": {
+							"customHandlers": [{
+								"funct": "function customHandler(node, path, widget) {\n            var n;\n            try {\n                n = eval(path);\n                var metaType = n.getMetaType();\n                if (metaType == GEPPETTO.Resources.VARIABLE_NODE) {\n                    //A plot function inside a channel\n                    G.addWidget(Widgets.PLOT).then(function (w) {\n                        return w.plotFunctionNode(n);\n                    });\n                } else if (metaType == GEPPETTO.Resources.VISUAL_GROUP_NODE) {\n                    //A visual group\n                    n.show(true);\n                } else if (metaType == GEPPETTO.Resources.COMPOSITE_TYPE_NODE) {\n                    //Another composite\n                    widget.setName('Information for ' + n.getId()).setData(n, [GEPPETTO.Resources.HTML_TYPE]);\n                }\n            } catch (ex) {\n                node = undefined;\n            }\n        }",
+								"event": "click"
+							}]
+						}
+					},
+					"Tutorial1": {
+						"widgetType": "TUTORIAL",
+						"isWidget": true,
+						"dataType": "array",
+						"data": [],
+						"componentSpecific": {
+							"activeTutorial": "Open Source Brain Tutorial",
+							"currentStep": 0
+						},
+						"size": {
+							"height": 300,
+							"width": 350
+						},
+						"position": {
+							"left": "50%",
+							"top": "50%"
+						}
+					},
+					"Canvas1": {
+						"widgetType": "CANVAS",
+						"isWidget": false,
+						"dataType": "instances",
+						"data": ["network"],
+						"componentSpecific": {
+							"cameraPosition": {
+								"x": -46.534,
+								"y": 55.103,
+								"z": 537.727
+							},
+							"cameraRotation": {
+								"rx": 0,
+								"ry": 0,
+								"rz": 0,
+								"radius": 547.43
+							},
+							"colorMap": {},
+							"opacityMap": {},
+							"geometryTypeMap": {},
+							"hoverListeners": [],
+							"backgroundColor": "0x101010"
+						}
+					}
+				}
+			}
+		}
         }
     ],
     "activeExperimentId": 758,
