@@ -34,7 +34,23 @@
             "view": {
 			"id": 795,
 			"viewStates": {
-				"views": {
+				"views": {					
+                    "Plot1": {
+						"widgetType": 0,
+						"isWidget": true,
+						"transparentBackground": false,
+						"name": "Golgi_Ca_LVA - gate h - time course",
+						"size": {
+							"height": 300,
+							"width": 350
+						},
+						"position": {
+							"left": 1308.5,
+							"top": 149
+						},
+						"dataType": "function",
+						"data": "Model.neuroml.Golgi_Ca_LVA.h.timeCourse.time_course"
+					},
 					"Plot3": {
 						"widgetType": 0,
 						"isWidget": true,
@@ -82,22 +98,6 @@
 						},
 						"dataType": "function",
 						"data": "Model.neuroml.Golgi_Ca_LVA.m.steadyState.steady_state"
-					},
-					"Plot1": {
-						"widgetType": 0,
-						"isWidget": true,
-						"transparentBackground": false,
-						"name": "Golgi_Ca_LVA - gate h - time course",
-						"size": {
-							"height": 300,
-							"width": 350
-						},
-						"position": {
-							"left": 1308.5,
-							"top": 149
-						},
-						"dataType": "function",
-						"data": "Model.neuroml.Golgi_Ca_LVA.h.timeCourse.time_course"
 					},
 					"Popup1": {
 						"widgetType": 1,
@@ -161,7 +161,7 @@
 							"opacityMap": {},
 							"geometryTypeMap": {},
 							"hoverListeners": [],
-							"backgroundColor": "0x101010"
+							"backgroundColor": "0x000000"
 						}
 					}
 				}
