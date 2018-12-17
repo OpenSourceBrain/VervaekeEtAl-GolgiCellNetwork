@@ -8,3 +8,5 @@ for more details.
 ![2cells](https://raw.githubusercontent.com/OpenSourceBrain/VervaekeEtAl-GolgiCellNetwork/master/neuroConstruct/images/medium.png)
 
 The Golgi cell model is based on the abstract cell model in [Solinas et al., Frontiers in Neuroscience 2007](http://www.opensourcebrain.org/projects/4).
+
+[![Build Status](https://travis-ci.org/OpenSourceBrain/VervaekeEtAl-GolgiCellNetwork.svg?branch=master)](https://travis-ci.org/OpenSourceBrain/VervaekeEtAl-GolgiCellNetwork)
