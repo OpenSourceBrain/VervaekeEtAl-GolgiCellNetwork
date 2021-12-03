@@ -9,7 +9,7 @@ for more details.
 
 The Golgi cell model is based on the abstract cell model in [Solinas et al., Frontiers in Neuroscience 2007](http://www.opensourcebrain.org/projects/4).
 
-[![Build Status](https://travis-ci.org/OpenSourceBrain/VervaekeEtAl-GolgiCellNetwork.svg?branch=master)](https://travis-ci.org/OpenSourceBrain/VervaekeEtAl-GolgiCellNetwork)
+[![Continuous build using OMV](https://github.com/OpenSourceBrain/VervaekeEtAl-GolgiCellNetwork/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/VervaekeEtAl-GolgiCellNetwork/actions/workflows/omv-ci.yml)
 
 [![DOI](https://www.zenodo.org/badge/4960822.svg)](https://www.zenodo.org/badge/latestdoi/4960822)
 
