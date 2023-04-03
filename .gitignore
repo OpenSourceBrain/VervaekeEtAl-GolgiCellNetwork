@@ -23,3 +23,4 @@ simulations
 *~
 /NeuroML2/LEMS_Test_*.xml
 /NeuroML2/*.gv*
+arm64
